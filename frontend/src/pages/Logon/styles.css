@@ -1,0 +1,56 @@
+.logon-container{
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh; /*Para ocupar toda a altura do body*/
+    margin: 0 auto; /*Para o conteúdo ficar centralizado na tela*/
+    
+    display: flex; /*TOdas os itens ficam alinhados lado a lado*/
+    align-items: center; /*Alinha os itens verticalmente ao centro*/
+    justify-content: space-between; /*Alinha os itens orizontalmente ao centro*/
+
+}
+
+.logon-container img{ /* */
+    width: 300px;
+    margin-bottom: 32px;
+}
+
+.logon-container img:not(:first-child){
+    width: 700px;
+    margin-right: auto;
+
+}
+
+.logon-container section.form{ /* */
+    width: 100%;
+    margin-right: auto;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.logon-container section.form form h1{
+    font-size: 32px;
+    margin-bottom: 32px;
+    color: #0078c8;
+}
+
+.logon-container section.form form a{
+    display: flex;
+    text-align: center;
+    margin-top: 16px;
+    color: #41414d;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.logon-container section.form form a svg{
+    margin-right: 8px;
+    margin-top: 1px;
+
+}
+
+.logon-container section.form form a:hover{
+    opacity: 0.8;
+}
