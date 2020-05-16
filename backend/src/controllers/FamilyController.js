@@ -26,7 +26,7 @@ module.exports = {
         const [count] = await connection('family').count()
 
         const family = await connection('family').select('*')
-            .limit(10)
+            .limit(5)
             .offset((page - 1) * 5)
             .select('*')
             .orderBy('family.responsible_name','asc');

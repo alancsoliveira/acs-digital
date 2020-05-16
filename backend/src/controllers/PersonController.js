@@ -33,7 +33,7 @@ module.exports = {
 
         const people = await connection('person')
             .join('family', 'family.id', '=', 'person.family_id')
-            .limit(10)
+            .limit(5)
             .offset((page - 1) * 5)
             .select([
                 'person.family_id',

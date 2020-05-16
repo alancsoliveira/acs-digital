@@ -16,6 +16,7 @@ export default function Profile() {
 
     const familyId = localStorage.getItem('familyId');
     const familyResponsible_name = localStorage.getItem('familyResponsible_name');
+    const name = familyResponsible_name.split(' ');
 
 
     useEffect(() => {
@@ -54,7 +55,7 @@ export default function Profile() {
         <div className="profile-container">
             <header>
                 <img src={logoImg} alt="ACS Digital" />
-                <span>Bem vindo, essa é a família de <strong>{familyResponsible_name}</strong></span>
+                <span>Bem vindo a família de <strong>{name[0]} {name[1]}</strong>.</span>
 
                 <Link className="button" to="person/new">Cadastrar um novo membro</Link>
                 <button onClick={handleLogout} type="button">
